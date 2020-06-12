@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_question"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:text="Қай елдің туы"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/algeria"
+            android:id="@+id/tv_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/ll_progress_details">
+
+            <ProgressBar
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginRight="60dp"
+                android:max="10"
+                android:id="@+id/progressBar"
+                android:minHeight="50dp"
+                android:progress="0"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:padding="15dp"
+                android:text="0/10"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="10dp" />
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:targetApi="24"
+                android:countDown="true"
+                android:format="00:15"
+                android:id="@+id/view_timer"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_option_one"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Apple"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/default_option_border_bg"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_option_two"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Google"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/default_option_border_bg"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_option_three"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Microsoft"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/default_option_border_bg"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_option_four"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Amazon"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_submit"
+            android:layout_margin="10dp"
+            android:text="Растау"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
